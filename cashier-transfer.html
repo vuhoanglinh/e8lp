@@ -419,11 +419,11 @@
 
       <div id="drawer-transaction-history" class="drawer">
         <header class="modal__header">
-          <div class="cell left-button js-close-drawer">
+          <a role="button" data-dismiss="drawer" class="cell left-button js-close-drawer">
             <svg class="icon">
               <use xlink:href="/dist/images/icons/useicon.svg#icon-arrow"></use>
             </svg>
-          </div> 
+          </a> 
           <div class="cell title">交易记录</div> 
           <a role="button" data-toggle="modal" data-target="#modal-transaction-filters" class="cell right-button open-modal">
             <svg class="icon">
@@ -447,108 +447,108 @@
             </tr>
           </tbody>
         </table>
-      </section> 
+        </section> 
 
 
-      <div class="modal modal--v2" id="modal-transaction-filters" tabindex="-1" role="dialog" aria-labelledby="modal-login-signup-label" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="panel">
-              <header class="modal__header">
-                <div data-dismiss="modal" class="cell left-button js-close-modal">
-                  <svg class="icon">
-                    <use xlink:href="/dist/images/icons/useicon.svg#icon-cross"></use>
-                  </svg>
-                </div> 
-                <div class="cell title">自定义</div>
-              </header> 
-              <section class="modal__body">
-                <div class="transaction-filters">
-                  <ul class="off">
-                    <li class="item">
-                      <h3 class="filter__title">交易记录</h3> 
-                      <div class="filter__group">
-                        <label class="filter-radio">
-                          <input type="radio" name="transaction_logs" value="all"> 
-                          <span class="radio__label">全部</span>
-                        </label> 
-                        <label class="filter-radio">
-                          <input type="radio" name="transaction_logs" value="withdrawal"> 
-                          <span class="radio__label">提款</span>
-                        </label> 
-                        <label class="filter-radio">
-                          <input type="radio" name="transaction_logs" value="deposit"> 
-                          <span class="radio__label">存款</span>
-                        </label> 
-                        <label class="filter-radio">
-                          <input type="radio" name="transaction_logs" value="internal"> 
-                          <span class="radio__label">户内转账</span>
-                        </label>
-                      </div>
-                    </li> 
-                    <li class="item">
-                      <h3 class="filter__title">状态</h3> 
-                      <div class="filter__group">
-                        <label class="filter-radio">
-                          <input type="radio" name="status" value="all"> 
-                          <span class="radio__label">全部</span>
-                        </label> 
-                        <label class="filter-radio">
-                          <input type="radio" name="status" value="pending"> 
-                          <span class="radio__label">待定</span>
-                        </label>
-                        <label class="filter-radio">
-                          <input type="radio" name="status" value="fail"> 
-                          <span class="radio__label">失败</span>
-                        </label> 
-                        <label class="filter-radio">
-                          <input type="radio" name="status" value="success"> 
-                          <span class="radio__label">成功</span>
-                        </label>
-                      </div>
-                    </li> 
-                    <li class="item">
-                      <h3 class="filter__title">最近交易记录</h3> 
-                      <div class="filter__group">
-                        <label class="filter-radio">
-                          <input type="radio" name="record_count" value="10"> 
-                          <span class="radio__label">最近10笔</span>
-                        </label> 
-                        <label class="filter-radio">
-                          <input type="radio" name="record_count" value="20"> 
-                          <span class="radio__label">最近20笔</span>
-                        </label> 
-                        <label class="filter-radio">
-                          <input type="radio" name="record_count" value="50">
-                          <span class="radio__label">最近50笔</span>
-                        </label>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </section>
+        <div class="modal modal--v2" id="modal-transaction-filters" tabindex="-1" role="dialog" aria-labelledby="modal-login-signup-label" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="panel">
+                <header class="modal__header">
+                  <div data-dismiss="modal" class="cell left-button js-close-modal">
+                    <svg class="icon">
+                      <use xlink:href="/dist/images/icons/useicon.svg#icon-cross"></use>
+                    </svg>
+                  </div> 
+                  <div class="cell title">自定义</div>
+                </header> 
+                <section class="modal__body">
+                  <div class="transaction-filters">
+                    <ul class="off">
+                      <li class="item">
+                        <h3 class="filter__title">交易记录</h3> 
+                        <div class="filter__group">
+                          <label class="filter-radio">
+                            <input type="radio" name="transaction_logs" value="all" checked> 
+                            <span class="radio__label">全部</span>
+                          </label> 
+                          <label class="filter-radio">
+                            <input type="radio" name="transaction_logs" value="withdrawal"> 
+                            <span class="radio__label">提款</span>
+                          </label> 
+                          <label class="filter-radio">
+                            <input type="radio" name="transaction_logs" value="deposit"> 
+                            <span class="radio__label">存款</span>
+                          </label> 
+                          <label class="filter-radio">
+                            <input type="radio" name="transaction_logs" value="internal"> 
+                            <span class="radio__label">户内转账</span>
+                          </label>
+                        </div>
+                      </li> 
+                      <li class="item">
+                        <h3 class="filter__title">状态</h3> 
+                        <div class="filter__group">
+                          <label class="filter-radio">
+                            <input type="radio" name="status" value="all" checked> 
+                            <span class="radio__label">全部</span>
+                          </label> 
+                          <label class="filter-radio">
+                            <input type="radio" name="status" value="pending"> 
+                            <span class="radio__label">待定</span>
+                          </label>
+                          <label class="filter-radio">
+                            <input type="radio" name="status" value="fail"> 
+                            <span class="radio__label">失败</span>
+                          </label> 
+                          <label class="filter-radio">
+                            <input type="radio" name="status" value="success"> 
+                            <span class="radio__label">成功</span>
+                          </label>
+                        </div>
+                      </li> 
+                      <li class="item">
+                        <h3 class="filter__title">最近交易记录</h3> 
+                        <div class="filter__group">
+                          <label class="filter-radio">
+                            <input type="radio" name="record_count" value="10" checked> 
+                            <span class="radio__label">最近10笔</span>
+                          </label> 
+                          <label class="filter-radio">
+                            <input type="radio" name="record_count" value="20"> 
+                            <span class="radio__label">最近20笔</span>
+                          </label> 
+                          <label class="filter-radio">
+                            <input type="radio" name="record_count" value="50">
+                            <span class="radio__label">最近50笔</span>
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </section>
+              </div>
             </div>
           </div>
-        </div>
-      </div> 
+        </div> 
 
-      <div id="dialog-transaction-details" class="dialog-wrapper">
-        <div class="dialog">
-          <header class="dialog__header">编号</header> 
-          <section class="dialog__body text-container">
-            <div class="text__container">
-              <span></span> 
-              <p style="font-size: 12px; margin-top: 9px;">有效日期: <span></span>
-              </p>
-            </div>
-          </section> 
-          <section class="dialog__footer">
-            <button type="button" class="btn copy-to-clipboard">复制</button> 
-            <button class="btn js-close-dialog">确定</button>
-          </section>
+        <div id="dialog-transaction-details" class="dialog-wrapper">
+          <div class="dialog">
+            <header class="dialog__header">编号</header> 
+            <section class="dialog__body text-container">
+              <div class="text__container">
+                <span></span> 
+                <p style="font-size: 12px; margin-top: 9px;">有效日期: <span></span>
+                </p>
+              </div>
+            </section> 
+            <section class="dialog__footer">
+              <button data-dismiss="dialog" type="button" class="btn copy-to-clipboard">复制</button> 
+              <button data-dismiss="dialog" class="btn js-close-dialog">确定</button>
+            </section>
+          </div>
         </div>
       </div>
-    </div>
 
       <div id="drawer-payment-methods" class="drawer">
         <header class="modal__header">

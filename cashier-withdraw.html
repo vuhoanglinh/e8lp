@@ -470,7 +470,7 @@
                         <h3 class="filter__title">交易记录</h3> 
                         <div class="filter__group">
                           <label class="filter-radio">
-                            <input type="radio" name="transaction_logs" value="all"> 
+                            <input type="radio" name="transaction_logs" value="all" checked> 
                             <span class="radio__label">全部</span>
                           </label> 
                           <label class="filter-radio">
@@ -491,7 +491,7 @@
                         <h3 class="filter__title">状态</h3> 
                         <div class="filter__group">
                           <label class="filter-radio">
-                            <input type="radio" name="status" value="all"> 
+                            <input type="radio" name="status" value="all" checked> 
                             <span class="radio__label">全部</span>
                           </label> 
                           <label class="filter-radio">
@@ -512,7 +512,7 @@
                         <h3 class="filter__title">最近交易记录</h3> 
                         <div class="filter__group">
                           <label class="filter-radio">
-                            <input type="radio" name="record_count" value="10"> 
+                            <input type="radio" name="record_count" value="10" checked> 
                             <span class="radio__label">最近10笔</span>
                           </label> 
                           <label class="filter-radio">
@@ -544,8 +544,8 @@
               </div>
             </section> 
             <section class="dialog__footer">
-              <button type="button" class="btn copy-to-clipboard">复制</button> 
-              <button class="btn js-close-dialog">确定</button>
+              <button data-dismiss="dialog" type="button" class="btn copy-to-clipboard">复制</button> 
+              <button data-dismiss="dialog" class="btn js-close-dialog">确定</button>
             </section>
           </div>
         </div>
