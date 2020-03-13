@@ -1,0 +1,35 @@
+
+.login {
+  &__header {
+    text-align: center;
+    padding: 22px 0 30px;
+  }
+  &__form .button-group {
+    display: flex;
+    justify-content: space-between;
+    color: $color-blue-500;
+    margin-top: 10px;
+  }
+
+  &__footer {
+    text-align: center;
+    margin-top: 30px;
+    a {
+      color: $color-blue-500 !important;
+    }
+  } 
+}
+
+
+.post-register-message {
+  .title {
+    font-size: $font-size-large;
+    text-align: center;
+    font-weight: $font-weight-bold;
+    color: $color-red-500;
+  }
+}
+
+.recovery-page {
+  overflow-x: hidden;
+}

@@ -1,0 +1,149 @@
+.cashier {
+  &__header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    background-color: $color-white;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 5px;
+      border-bottom: 1px solid $color-grey-5;
+      box-shadow: 0 1px 0 0 $color-grey-300;
+      z-index: 1;
+    }
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 0;
+
+      &.is-active {
+        color: $color-red-500;
+      }
+    }
+
+    .is-new {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 12px;
+        left: -5px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: $color-green-500;
+      }
+    }
+  }
+}
+
+.cashier-page {
+  background-color: $color-grey-5;
+  .is-auto-transfer {
+    opacity: .3;
+    pointer-events: none;
+    user-select: none
+  }
+}
+
+.withdrawl__bind-button {
+  font-size: 14px;
+  color: #fff!important;
+  text-align: center;
+  line-height: 24px;
+  border-radius: 5px;
+  border-bottom: 4px solid #2e66c1;
+  margin-left: 5px;
+  padding: 3px 12px;
+  background-color: #4a90f7;
+}
+
+.display--flex, .flex {
+  display: flex;
+}
+
+
+.bank-list {
+  font-size: 0;
+  .bank__option {
+    width: 175px;
+    margin: 0 auto;
+    line-height: 70px;
+    white-space: nowrap;
+  }
+
+  input[type=radio] {
+    display: none;
+  }
+
+  .label {
+    font-size: 21px;
+    margin-left: 9px;
+  }
+
+  .item.is-disabled {
+    opacity: .3;
+  }
+}
+
+
+.card-list {
+  .card-list__header {
+    font-size: 18px;
+    margin-top: 15px;
+    padding: 0 15px;
+  }
+
+  .item {
+    font-size: 0;
+  }
+
+  .card__option {
+    flex-wrap: nowrap;
+    align-items: center;
+    line-height: 90px;
+
+    &>span:last-child {
+      margin-left: auto;
+    }
+
+    .card {
+      display: flex;
+      width: 88%;
+      overflow: hidden;
+    }
+  }
+
+  input[type=radio] {
+    display: none;
+  }
+
+  .label {
+    margin-left: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .icon {
+    width: 17px;
+    fill: #bfbfbf;
+  }
+
+  .add-new-card {
+    width: 100%;
+    font-size: 24px;
+    color: #acacac;
+    text-align: center;
+    line-height: 90px;
+    margin: 0 auto;
+  }
+}

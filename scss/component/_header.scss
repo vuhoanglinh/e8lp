@@ -1,0 +1,51 @@
+.main-header {
+  color: $color-white;
+  background-color: $color-red-500;
+  transition: transform .5s ease-in;
+  height: 42px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    align-items: center;
+    height: 100%;
+  }
+
+  .header {
+    &__logo {
+      display: block;
+    }
+    &__text {
+      font-size: $font-size-large;
+    }
+  }
+
+  .cell {
+    flex: 0 1 100%;
+    white-space: nowrap;
+  }
+  .icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    fill: $color-white;
+    vertical-align: middle;
+  }
+
+  .btn--action {
+    color: $color-white;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .btn--yellow {
+    background-color: $color-yellow-500;
+    color: $color-red-500;
+    font-family: #{$font-secondary}, "#{$font-primary}", sans-serif;
+    padding: 2px 16px;
+    font-size: $font-size-caption;
+  }
+}

@@ -1,0 +1,43 @@
+.profile-page {
+  background-color: $color-grey-5;
+}
+
+.bind-mobile-form .callcode-picker {
+  -webkit-flex: none;
+  -moz-box-flex: 0;
+  -ms-flex: none;
+  flex: none;
+  line-height: 31px;
+  border-right: 2px solid #f0f0f0;
+  padding-right: 15px;
+}
+
+.profile-page .profile-details {
+  opacity: 0;
+  transition: opacity .3s ease-out;
+}
+
+.profile-page .visible {
+  opacity: 1;
+}
+
+.reset-pin-form .text-right {
+  text-align: right;
+}
+
+.reset-pin-form textarea {
+  width: 100%;
+  min-height: 200px;
+  border: none;
+}
+
+.reset-pin-banks-selection-wrapper .short-list li {
+  display: none;
+}
+
+.reset-pin-banks-selection-wrapper .short-list li:nth-child(-n+5) {
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}

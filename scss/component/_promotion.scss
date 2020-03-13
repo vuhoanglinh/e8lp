@@ -1,0 +1,233 @@
+.welfare-content {
+  padding-top: 10px;
+}
+
+.promotions-nav {
+  display: flex;
+  color: #4d4d4d;
+  margin: -10px 0;
+  padding: 10px 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  background-image: linear-gradient(to right,#f0f0f0,#f0f0f0),linear-gradient(to right,#f0f0f0,#f0f0f0),linear-gradient(to right,rgba(119,119,119,.25),rgba(240,240,240,0)),linear-gradient(to left,rgba(119,119,119,.25),rgba(240,240,240,0));
+  background-position: left center,right center,left center,right center;
+  background-repeat: no-repeat;
+  background-size: 20px 100%,20px 100%,15px 100%,15px 100%;
+  background-attachment: local,local,scroll,scroll;
+
+  .item {
+    display: flex;
+    flex: 0 0 calc(100% / 4.56);
+    justify-content: center;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  input[type=radio] {
+    display: none;
+
+    &:checked~.promotion-type {
+      border-bottom: 1px solid #4d4d4d
+    }
+  }
+}
+.promotions-wrapper {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0 15px 20px;
+
+  .item {
+    position: relative;
+    margin-top: 20px;
+    &.is-new::after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: -8px;
+      width: 60px;
+      height: 32px;
+      background: url(/dist/images/new-big.png) 0 0 no-repeat;
+      background-size: 60px 32px;
+
+      @media only screen and (-webkit-min-device-pixel-ratio: 2),only screen and (min-device-pixel-ratio:2),only screen and (min-resolution:192dpi),only screen and (min-resolution:2dppx) {
+        background-image:url(/dist/images/new-big-2x.png);
+      }
+    }
+
+
+    &.is-expired {
+      pointer-events: none;
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        background: url(/dist/images/icons/expired.svg) rgba(0,0,0,.6) center no-repeat;
+        background-size: 100% auto;
+        z-index: 1;
+      }
+    }
+  }
+
+
+  .promotion-container {
+    display: block;
+    font-size: 14px;
+    color: #414141;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #bfbfbf;
+    background-color: #fff;
+
+    .promotion__cover {
+      position: relative;
+      left: 50%;
+      width: 100%;
+      min-height: 1px;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .promotion__inner {
+      padding: 0 20px;
+    }
+
+    .promotion__title {
+      font-size: 16px;
+      margin: 10px 0 0;
+    }
+
+    .promotion__preface {
+      padding: 10px 0;
+    }
+
+    .btn-details {
+      width: 100%;
+      color: #fff;
+      line-height: 35px;
+      background-color: $color-red-500;
+    }
+
+    .filtered {
+      display: none;
+    }
+  }
+}
+
+.promotion-details-container {
+  font-size: 14px;
+  color: #414141;
+  background-color: #f9f9f9;
+
+  .promotion {
+    padding: 15px 15px 15px;
+
+    &__cover {
+      position: relative;
+      left: 50%;
+      width: 100%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &__avatar {
+      display: none
+    }
+  }
+
+  figcaption {
+    font-size: 15px;
+    text-align: center;
+    line-height: 21px;
+    margin-bottom: 20px;
+
+    .timestamp {
+      display: block;
+      font-size: 13px;
+    }
+  }
+
+  h3 {
+    font-size: 13px;
+    color: $color-red-500;
+    margin-top: 0
+  }
+
+  a:not(.btn) {
+    color: $color-blue-500;
+  }
+
+  .highlight {
+    color: $color-red-500;
+  }
+
+  .promotion-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    .table__header, th {
+      color: #fffeff;
+      text-align: center;
+      border: 1px solid #fff;
+      background-color: $color-red-500;
+    }
+
+    td {
+      color: #5f5a5d;
+      text-align: center;
+      vertical-align: middle;
+      padding: 4px;
+      border: 1px solid #fff;
+      background-color: #e0e0e0;
+    }
+
+    td ol, td ul {
+      margin-bottom: 0;
+    }
+  }
+
+
+  .promotion-terms {
+    h3 {
+      font-size: 14px;
+      color: $color-red-500;
+      padding-bottom: 3px;
+      border-bottom: 1px solid $color-red-700;
+    }
+    ul {
+      padding-left: 20px;
+    }
+  }
+
+  .tail, .tail--registration {
+    display: none;
+  }
+}
+
+.promotion-general-terms-container {
+  font-size: 13px;
+  padding: 20px;
+  ul {
+    padding-left: 20px;
+  }
+
+  li {
+    margin-top: 10px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
