@@ -525,6 +525,7 @@ ol.off, ul.off {
   max-width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+  margin: 5px 0;
 }
 
 .home-category .icon + .icon {
@@ -572,6 +573,8 @@ ol.off, ul.off {
 
 .home-category .item input[type=radio]:checked ~ .cat-type .icon + .icon {
   display: block;
+  background: linear-gradient(145deg, white 10%, #fee6b2 35%, #fbbe39 55%, #231802 100%);
+  border-radius: 50%;
 }
 
 .home-category-list {
@@ -591,10 +594,7 @@ ol.off, ul.off {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  height: 150px;
 }
 
 .home-category-list .item img {
@@ -602,6 +602,7 @@ ol.off, ul.off {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 8px;
 }
 
 .footer {

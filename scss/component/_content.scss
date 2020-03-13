@@ -159,6 +159,7 @@
     height: 50px;
     max-width: 100%;
     object-fit: contain;
+    margin: 5px 0;
   }
 
   .icon + .icon {
@@ -188,6 +189,8 @@
         }
         .icon + .icon {
           display: block;
+          background: linear-gradient(145deg, rgba(255,255,255,1) 10%, rgba(254,230,178,1) 35%, rgb(251, 190, 57) 55%, rgb(35, 24, 2) 100%);
+          border-radius: 50%;
         }
       }
     }
@@ -206,11 +209,12 @@
 
   .item {
     display: flex;
-    flex-direction: column;
+    height: 150px;
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      border-radius: 8px;
     }
   }
 }
