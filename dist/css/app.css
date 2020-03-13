@@ -443,7 +443,7 @@ ol.off, ul.off {
   width: 26px;
   height: 100%;
   fill: #ffffff;
-  padding: 4px 0 0 5px;
+  padding: 4px 5px 0 3px;
   background-color: #000;
 }
 
@@ -2206,5 +2206,9 @@ select.off {
   appearance: none;
   border: none;
   background-color: transparent;
+}
+
+.security-page {
+  background-color: #f0f0f0;
 }
 /*# sourceMappingURL=app.css.map */

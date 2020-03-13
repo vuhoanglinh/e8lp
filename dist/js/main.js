@@ -69,6 +69,16 @@ var webapp = {}
     target.removeClass('is-visible');
   });
 
+  // dialog
+  $body.on("click", "[data-dialog]", function () {
+    var target = $(this).attr('data-dialog');
+    $(target).addClass('is-visible');
+  });
+  $body.on("click", '[data-dismiss="dialog"]', function () {
+    var target = $(this).parents('.dialog-wrapper');
+    target.removeClass('is-visible');
+  });
+
 
   var timer;
   // dialog
