@@ -135,7 +135,7 @@
     }
     span {
       color: inherit;
-      background: linear-gradient($color-grey-50, $color-yellow-900);
+      background: linear-gradient($color-white, $color-yellow-900);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -208,6 +208,7 @@
 .home-category-list {
   display: grid;
   grid-gap: 20px;
+  grid-column: 1 / span 2;
   grid-template-columns: repeat(2, 1fr);
   margin: 20px 15px;
 
@@ -221,7 +222,7 @@
     img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
       border-radius: 8px;
     }
   }
